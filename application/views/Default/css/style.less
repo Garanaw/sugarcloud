@@ -1,0 +1,147 @@
+@import "../less/bootstrap.less";
+@import "foundation-icons.css";
+
+
+// Adding a spacer for the footer
+html, body{height: 100%;}
+.main-container{height: 100%; min-height:100%;  height:auto!important;}
+.spacer{clear:both; padding-top:70px;}
+#footer {min-height:70px; margin-top:-70px;}
+.fixed-shape{
+	border-width: 1px 0 0;
+	border-radius: 0;
+	bottom: 0;
+	margin-bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+
+/**
+ * Fix to hide the horizontal scrollbar on collapsible navbar
+ */
+.navbar-collapse{
+	overflow-x: hidden;
+}
+@media (min-width: 768px) {
+    .navbar-collapse {
+       padding: 0 15px;
+    }
+}
+
+/**
+ * Hide Spiner in input:number
+ */
+// Chrome
+input[type=number].no-spiner::-webkit-inner-spin-button,
+input[type=number].no-spiner::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+// Firefox
+input[type=number].no-spiner {-moz-appearance: textfield;}
+
+// Reviving Inverse Button
+.btn-inverse {
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #363636;
+	*background-color: #222222;
+	background-image: -moz-linear-gradient(top, #444444, #222222);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
+	background-image: -webkit-linear-gradient(top, #444444, #222222);
+	background-image: -o-linear-gradient(top, #444444, #222222);
+	background-image: linear-gradient(to bottom, #444444, #222222);
+	background-repeat: repeat-x;
+	border-color: #222222 #222222 #000000;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+}
+.btn-inverse:hover,
+.btn-inverse:focus,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse.disabled,
+.btn-inverse[disabled] {
+	color: #ffffff;
+	background-color: #222222;
+	*background-color: #151515;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.btn-inverse:active,
+.btn-inverse.active {
+	background-color: #080808 \9;
+}
+.btn-inverse.active {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+// Footer inverse
+.footer-inverse {
+	background-color: #1b1b1b;
+	background-image: -moz-linear-gradient(top, #222222, #111111);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+	background-image: -webkit-linear-gradient(top, #222222, #111111);
+	background-image: -o-linear-gradient(top, #222222, #111111);
+	background-image: linear-gradient(to bottom, #222222, #111111);
+	background-repeat: repeat-x;
+	border-color: #252525;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+}
+
+// Cursors
+.cursor-pointer{
+	cursor:pointer;
+}
+
+// Colors
+.text-danger{
+	color: #d9534f;
+}
+
+/*
+ * Foundation Icons Style:
+ */
+
+.fi-step {
+	display: inline-block;
+	line-height: 1;
+	width: 10%;
+}
+.fi-size-12 { font-size: 12px; }
+.fi-size-14 { font-size: 14px; }
+.fi-size-16 { font-size: 16px; }
+.fi-size-18 { font-size: 18px; }
+.fi-size-21 { font-size: 21px; }
+.fi-size-24 { font-size: 24px; }
+.fi-size-36 { font-size: 36px; }
+.fi-size-48 { font-size: 48px; }
+.fi-size-60 { font-size: 60px; }
+.fi-size-72 { font-size: 72px; }
+
+/*
+ * End of Foundation Icons Style
+ */
+
+.navbar .divider-vertical {
+	height: 50px;
+	margin: 0 9px;
+	border-right: 1px solid #ffffff;
+	border-left: 1px solid #f2f2f2;
+}
+
+.navbar-inverse .divider-vertical {
+	border-right-color: #222222;
+	border-left-color: #111111;
+}
+
+@media (max-width: 767px) {
+	.navbar-collapse .nav > .divider-vertical {
+		display: none;
+	 }
+}

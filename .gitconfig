@@ -1,0 +1,8 @@
+[user]
+	name = Pablo Villalba
+	email = garanaw@gmail.com
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+	interactive = auto
